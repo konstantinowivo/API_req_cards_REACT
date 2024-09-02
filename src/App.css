@@ -1,0 +1,26 @@
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    padding: 20px; 
+}
+
+@media (max-width: 1200px) {
+    .posts-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .posts-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        justify-items: center; 
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .posts-container {
+        grid-template-columns: 1fr;
+    }
+}

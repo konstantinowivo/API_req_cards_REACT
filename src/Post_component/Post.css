@@ -1,22 +1,20 @@
 @media (max-width: 1200px) {
-    .cards-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+    .post-card {
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
 @media (max-width: 768px) {
-    .cards-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    .post-card {
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
 @media (max-width: 480px) {
-    .cards-container {
-        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+    .post-card {
+        grid-template-columns: 1fr; 
     }
 }
-
-
 
 .post-card {
     border: 1px solid #ddd;

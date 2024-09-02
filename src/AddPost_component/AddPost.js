@@ -13,6 +13,7 @@ const handleSubmit = (e) => {
 };    
     
 return (
+    <div class="cards-container">
     <div className='addPost-card'>
         <form onSubmit={handleSubmit}>
             <h2>Add new Post</h2>
@@ -35,6 +36,7 @@ return (
             </div>
             <button type="submit" className="btn-submit">Add Post</button>
         </form>
+    </div>
     </div>
     )
 }

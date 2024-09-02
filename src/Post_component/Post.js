@@ -2,7 +2,6 @@ import './Post.css'
 
 export default function Post(props) {
     return (
-    <div className="cards-container">
         <div className="post-card">
             <h2 className="post-title">{props.title}</h2>
             <p className="post-body">{props.body}</p>
@@ -12,6 +11,5 @@ export default function Post(props) {
                 Delete
             </button>
         </div>
-    </div>
     )
-}
+}   

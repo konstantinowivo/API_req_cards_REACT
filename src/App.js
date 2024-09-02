@@ -3,13 +3,14 @@ import AddPost from "./AddPost_component/AddPost";
 import Post from "./Post_component/Post";
 import { useState } from "react";
 import { useEffect } from "react";
+import './App.css'
 
 export default function App(){
 
     const [posts, setPosts] = useState([]);
 
     const fetchPosts = async() => {
-    const response = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=8");
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=3");
     const data = await response.json();
     setPosts(data);
     }
@@ -50,10 +51,10 @@ export default function App(){
 
     return (
     <main>
-    <h1>App para consumir API Rest</h1>
+    <h1>Handle API with React</h1>
         <AddPost addPost={addPost}/>
-        <section className="posts-container">
         <h2>Posteos</h2>
+        <section className="posts-container">
         {posts.map((post) => 
             <Post 
             key={post.id} 
