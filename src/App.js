@@ -1,7 +1,6 @@
 import React from "react";
 import AddPost from "./AddPost_component/AddPost";
 import Post from "./Post_component/Post";
-import RecipeReviewCard from "./Material_component/Card_component";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -65,7 +64,6 @@ export default function App(){
             />
         )}
         </section>
-        <RecipeReviewCard />
     </main>
     )
 }

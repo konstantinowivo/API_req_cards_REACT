@@ -1,17 +1,19 @@
 import {useState} from 'react'
+import './AddPost.css'; // Importa el archivo CSS
 
 export default function AddPost(props) {
-    const [title, setTitle] = useState('');
-    const [body, setBody] = useState('');
+const [title, setTitle] = useState('');
+const [body, setBody] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        props.addPost(title, body);
-        setTitle('');
-        setBody('');
-    };    
+const handleSubmit = (e) => {
+    e.preventDefault();
+    props.addPost(title, body);
+    setTitle('');
+    setBody('');
+};    
     
-    return (
+return (
+    <div className='addPost-card'>
         <form onSubmit={handleSubmit}>
             <h2>Add new Post</h2>
             <div className="input-container">
@@ -33,5 +35,6 @@ export default function AddPost(props) {
             </div>
             <button type="submit" className="btn-submit">Add Post</button>
         </form>
+    </div>
     )
 }
