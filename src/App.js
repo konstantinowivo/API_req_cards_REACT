@@ -1,6 +1,6 @@
 import React from "react";
-import AddPost from "./AddPost_component/AddPost";
-import Post from "./Post_component/Post";
+import AddPost from "./components/AddPost_component/AddPost";
+import Post from "./components/Post_component/Post";
 import { useState } from "react";
 import { useEffect } from "react";
 import './App.css'

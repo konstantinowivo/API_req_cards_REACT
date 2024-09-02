@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import './AddPost.css'; // Importa el archivo CSS
+import './AddPost.css';
 
 export default function AddPost(props) {
 const [title, setTitle] = useState('');
